@@ -26,5 +26,5 @@ const Attendance = sequelize.define('Attendance', {
 
 });
 
-
+//asistencia
 module.exports = Attendance;
