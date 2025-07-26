@@ -3,7 +3,7 @@ const sequelize = require ('../config/database')
 
 const Attendance = sequelize.define('Attendance', {
     id_user: {
-        type:DataTypes.INTEGER,
+        type:DataTypes.STRING,
         allowNull:false
     },
     date:{
