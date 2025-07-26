@@ -16,7 +16,7 @@ const Attendance = sequelize.define('Attendance', {
     },
     departure_time:{
         type:DataTypes.TIME,
-        allowNull:false
+        allowNull:true
     },
     id_course:{
         type:DataTypes.INTEGER,
