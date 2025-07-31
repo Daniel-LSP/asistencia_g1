@@ -22,6 +22,7 @@ const Attendance = sequelize.define('Attendance', {
         type:DataTypes.INTEGER,
         allowNull:false
     },
+    
 
 
 });
