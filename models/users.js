@@ -1,5 +1,6 @@
 const { DataTypes } = require ("sequelize");
 const sequelize =require('../config/database');
+const doctype = require('../models/doctype')
 
 const users = sequelize.define('users',{
     document:{
@@ -9,7 +10,11 @@ const users = sequelize.define('users',{
     },
     document_type:{
         type:DataTypes.INTEGER,
-        allowNull:false
+        allowNull:false,
+        references: {
+            model: doctype,
+            key: 'id'
+        }
     },
     name:{
         type:DataTypes.STRING,
