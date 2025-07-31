@@ -36,5 +36,5 @@ const Attendance = sequelize.define('Attendance', {
 
 });
 
-//asistencia
+//rama alejo
 module.exports = Attendance;
